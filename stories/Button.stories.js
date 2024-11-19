@@ -41,4 +41,9 @@ export const Large = {
   },
 };
 
-export const Small = {};
+export const Small = {
+  args: {
+    size: "small",
+    label: "Button",
+  },
+};

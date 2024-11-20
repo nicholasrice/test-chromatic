@@ -39,4 +39,4 @@ jobs:
         with:
           # ⚠️ Make sure to configure a `CHROMATIC_PROJECT_TOKEN` repository secret
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          skip: ${{steps.changed-files.outputs.any_changed === 'true'}}
+          skip: ${{ needs.changed-files.outputs.any_changed == 'true' }}
